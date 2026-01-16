@@ -616,6 +616,31 @@ body.nav-active {
 }
 
 /*-----------------------------------*\
+  #About Me
+\*-----------------------------------*/
+
+.slider-div {
+  border-block: 0.5px solid var(--border-light-gray);
+}
+
+.slider-div .active {
+  height: 500px;
+}
+
+.slider-div .active .details {
+  visibility: visible;
+}
+
+.slider-div h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.slider-div .details {
+  visibility: hidden;
+}
+
+/*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
 
