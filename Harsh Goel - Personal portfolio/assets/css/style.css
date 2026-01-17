@@ -616,31 +616,6 @@ body.nav-active {
 }
 
 /*-----------------------------------*\
-  #About Me
-\*-----------------------------------*/
-
-.slider-div {
-  border-block: 0.5px solid var(--border-light-gray);
-}
-
-.slider-div .active {
-  height: 500px;
-}
-
-.slider-div .active .details {
-  visibility: visible;
-}
-
-.slider-div h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.slider-div .details {
-  visibility: hidden;
-}
-
-/*-----------------------------------*\
   #CTA
 \*-----------------------------------*/
 
@@ -664,6 +639,213 @@ body.nav-active {
   margin-block-start: 30px;
 }
 
+
+
+/*-----------------------------------*\
+  #About SECTION
+\*-----------------------------------*/
+
+.about {
+  margin-top: 40px;
+  font-size: 50px;
+  text-align: center;
+  color: var(--bg-white);
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  gap: 100px;
+}
+
+
+.img-about img {
+  width: 400px;
+  height: 500px;
+}
+
+.text-about {
+  color: var(--bg-white);
+  height: 300px;
+  width: 35%;
+
+}
+
+.about-icons {
+  padding-left: 50px;
+  display: flex;
+  gap: 20px;
+  color: var(--bg-white);
+  height: 70px;
+  width: 70px;
+}
+
+/*-----------------------------------*\
+  #SKILL SECTION
+\*-----------------------------------*/
+
+.section-heading {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: var(--bg-white);
+  text-align: center;
+  font-family: var(--fontFamily-roboto);
+  font-size: 20px;
+}
+
+.skillset-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-box {
+  position: relative;
+  height: 80px;
+  width: 380px;
+
+  background: linear-gradient(145deg, #121212, #0a0a0a);
+  color: var(--bg-white);
+  margin: 20px;
+  padding: 15px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+
+  transition: height 0.5s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+  box-shadow: 1px 1px 1px 1px solid white;
+  border: solid 0.5px var(--border-light-gray);
+  height: 250px;
+}
+
+
+.skill-box-heading {
+  text-align: center;
+  font-family: var(--fontFamily-roboto);
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.skillset-details {
+  font-size: 18px;
+  line-height: 32px;
+  padding-left: 0;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.skill-box:hover .skillset-details {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background: var(--bg-white);
+  transition: width 0.4s ease;
+}
+
+.skill-box:hover::after {
+  width: 100%;
+}
+
+.progress-bar {
+  margin-left: 40px;
+  background-color: var(--bg-whiten);
+  height: 10px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+  /* important */
+}
+
+.progress-fill {
+  height: 100%;
+  width: 90%;
+  /* progress value */
+  background-color: var(--bg-light-gray);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+
+/*-----------------------------------*\
+  #EDUCATION
+\*-----------------------------------*/
+
+
+.education-box {
+  /* border: solid 1px var(--border-white); */
+  font-size: 20px;
+  color: var(--bg-light-gray);
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.education-box:hover {
+  box-shadow: 1px 1px 1px 1px solid white;
+  border: solid 0.5px var(--border-light-gray);
+
+}
+
+.education-heading {
+  font-size: 30px;
+  font-weight: 200;
+  position: relative;
+  top: 80px;
+  text-align: center;
+  color: var(--border-light-gray);
+  font-family: var(--fontFamily-roboto);
+}
+
+.box {
+  height: 150px;
+  top: 23%;
+  left: 40%;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+
+}
+
+.box:hover {
+  box-shadow: 0px 3px 12px 0px white;
+  border: 1px solid transparent;
+}
 
 
 
