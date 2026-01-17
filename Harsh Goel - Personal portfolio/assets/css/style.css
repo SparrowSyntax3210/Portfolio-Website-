@@ -646,7 +646,7 @@ body.nav-active {
 \*-----------------------------------*/
 
 .about {
-  margin-top: 40px;
+  margin-top: 50px;
   font-size: 50px;
   text-align: center;
   color: var(--bg-white);
@@ -664,7 +664,7 @@ body.nav-active {
 
 .img-about img {
   width: 400px;
-  height: 500px;
+  height: 300px;
 }
 
 .text-about {
@@ -701,6 +701,7 @@ body.nav-active {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .skill-box {
@@ -801,9 +802,9 @@ body.nav-active {
 \*-----------------------------------*/
 
 
-.education-box {
-  /* border: solid 1px var(--border-white); */
-  font-size: 20px;
+/* .education-box { */
+/* border: solid 1px var(--border-white); */
+/* font-size: 20px;
   color: var(--bg-light-gray);
   width: 100%;
   min-height: 100vh;
@@ -846,7 +847,7 @@ body.nav-active {
   box-shadow: 0px 3px 12px 0px white;
   border: 1px solid transparent;
 }
-
+ */
 
 
 
